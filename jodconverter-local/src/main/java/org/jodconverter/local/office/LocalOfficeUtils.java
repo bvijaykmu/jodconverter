@@ -66,6 +66,7 @@ public final class LocalOfficeUtils {
     /* default */ static final File INSTANCE;
 
     static {
+      System.setProperty("office.home", "D:\\Program Files\\LibreOffice");
       if (StringUtils.isNotBlank(System.getProperty("office.home"))) {
         INSTANCE = new File(System.getProperty("office.home"));
 

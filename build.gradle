@@ -119,6 +119,13 @@ idea {
     }
 }
 
+task printProps {
+    doLast {
+       
+        println System.properties['office.home']
+    }
+}
+
 def librariesSources = librariesProjects.sourceSets.main
 
 task javadocAll(type: Javadoc) {
